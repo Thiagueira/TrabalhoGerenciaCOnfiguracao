@@ -1,11 +1,14 @@
-
-package model;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Model;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 //import javafx.scene.chart.PieChart.Data;
-
 
 public class Venda {
     
@@ -76,3 +79,49 @@ public class Venda {
         return str;
         
     }
+
+    public static int getNumero() {
+        return numero;
+    }
+
+    public static void setNumero(int numero) {
+        Venda.numero = numero;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public List<Item> getLista() {
+        return lista;
+    }
+
+    public void setLista(List<Item> lista) {
+        this.lista = lista;
+    }
+
+    public float getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(float valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
+    public Date getDataVenda() {
+        return dataVenda;
+    }
+
+    public void setDataVenda(Date dataVenda) {
+        this.dataVenda = dataVenda;
+    }
+    
+    
+    
+    
+    
+}
