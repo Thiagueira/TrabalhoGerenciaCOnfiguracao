@@ -24,5 +24,41 @@ public class ClienteDAO {
     {
         lista.add(cliente);
     }
+      public Cliente buscarCliente(String cpf)
+    {
+        Cliente cli = null;
+        for(int i =0; i<lista.size();i++)
+        {
+            if(lista.get(i).getCpf().equals(cpf))
+                cli = lista.get(i);
+        }
+        
+        return cli;
+    }
+    
+    public void removerCliente(String cpf)
+    {
+        Cliente cli = buscarCliente(cpf);
+        if(cli != null)
+        {
+            lista.remove(cli);
+        }
+    }
+    
+    public void alterarCliente(String cpf)
+    {
+        Cliente cli = buscarCliente(cpf);
+        if(cli != null)
+        {
+            int pos = lista.indexOf(cli);
+            lista.set(pos, cli);
+        }
+    }
+    
+    public List<Cliente> todosClientes()
+    {
+        return lista;
+    }
+    
     
 }
