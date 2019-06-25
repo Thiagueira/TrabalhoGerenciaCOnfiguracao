@@ -11,10 +11,7 @@ import Dao.VendaDAO;
 import javax.swing.JOptionPane;
 import Model.Livro;
 
-/**
- *
- * @author Giuliano
- */
+
 public class FormPrincipal extends javax.swing.JFrame {
 
     public static ClienteDAO daoCliente = null; 
